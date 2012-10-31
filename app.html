@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page3">
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Mumsy's Health
+                </h1>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <span style="font-size: x-large; " data-mce-style="font-size: x-large;">
+                                GOOD MORNING
+                            </span>
+                        </b>
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 133px; height: 128px" src="http://assets.codiqa.com/ps/36884/48c73fef6b0f2d28straightface.png">
+                </div>
+                <div>
+                    <p>
+                        <b>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                        </b>
+                        <span style="font-size: large; " data-mce-style="font-size: large;">
+                            <strong>
+                                &nbsp;
+                                <span style="font-family: 'comic sans ms', sans-serif; color: rgb(0, 128, 0); "
+                                data-mce-style="font-family: 'comic sans ms', sans-serif; color: #008000;">
+                                    Health Advice
+                                </span>
+                            </strong>
+                        </span>
+                    </p>
+                    <p style="text-align: center; " data-mce-style="text-align: center;">
+                        <span style="font-family: 'comic sans ms', sans-serif; text-align: center; font-size: large; "
+                        data-mce-style="font-family: 'comic sans ms', sans-serif; text-align: center; font-size: large;">
+                            You need to get some more exercise, girlfriend!
+                        </span>
+                    </p>
+                    <p style="text-align: center; " data-mce-style="text-align: center;">
+                        <span style="font-family: 'comic sans ms', sans-serif; text-align: center; font-size: large; "
+                        data-mce-style="font-family: 'comic sans ms', sans-serif; text-align: center; font-size: large;">
+                            <br>
+                        </span>
+                    </p>
+                </div>
+                <a href="#page7">
+                    <div style=" text-align:center">
+                        <img style="width: 50px; height: 50px" src="http://assets.codiqa.com/ps/36884/d6076639571d3048CALENDAR.png">
+                    </div>
+                </a>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- MyProfile -->
+        <div data-role="page" id="page5">
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput1">
+                            First Name
+                        </label>
+                        <input name="" id="textinput1" placeholder="" value="Mumsy" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput2">
+                            Last Name
+                        </label>
+                        <input name="" id="textinput2" placeholder="" value="Razor" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Contact
+                        </label>
+                        <input name="" id="textinput3" placeholder="" value="5234563245" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="HealthCnd">
+                            Health Conditions
+                        </label>
+                        <textarea name="" id="HealthCnd" placeholder="">Diabetes</textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="FamilyHst">
+                            Family History
+                        </label>
+                        <textarea name="" id="FamilyHst" placeholder="">High Cholesteral</textarea>
+                    </fieldset>
+                </div>
+                <input type="submit" value="Save">
+                <a data-role="button" href="#page3">
+                    Back
+                </a>
+            </div>
+        </div>
+        <!-- Calendar -->
+        <div data-role="page" id="page7" style="background: url('http://assets.codiqa.com/ps/36884/a020fd299ed644812012.10.15-15.37.02.jpg') no-repeat">
+            <div data-role="content" style="padding: 01px">
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- HealthMeter -->
+        <div data-role="page" id="page4">
+            <div data-role="content">
+                <div>
+                    <p>
+                        <span style="font-family: 'comic sans ms', sans-serif; " data-mce-style="font-family: 'comic sans ms', sans-serif;">
+                            <b>
+                                <span id="_mce_caret" data-mce-bogus="1" style="">
+                                    <span style="background-color: rgb(0, 128, 128); " data-mce-bogus="1">
+                                        ﻿
+                                    </span>
+                                </span>
+                                My Health Progress
+                            </b>
+                        </span>
+                    </p>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="slider1">
+                            Cholestrol
+                        </label>
+                        <input type="range" name="slider" value="50" min="0" max="100" data-highlight="true">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="slider2">
+                            hemoglobin
+                        </label>
+                        <input type="range" name="slider" value="60" min="0" max="100" data-highlight="true">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="toggleswitch1">
+                            Blood Pressure
+                        </label>
+                        <select name="toggleswitch1" id="toggleswitch1" data-theme="b" data-role="slider">
+                            <option value="off">
+                                Normal
+                            </option>
+                            <option value="on">
+                                Abnormal
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Kids Health Score
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Son: 75
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Daughter: 82
+                        </a>
+                    </li>
+                </ul>
+                <a data-role="button" data-inline="true" href="#page12">
+                    Back
+                </a>
+                <a data-role="button" data-inline="true" href="#page4">
+                    Statistics
+                </a>
+            </div>
+        </div>
+        <!-- Collaboration -->
+        <div data-role="page" id="page10">
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        COMPETE
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Run
+                            <span class="ui-li-count">
+                                5K
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Bike
+                            <span class="ui-li-count">
+                                15 Mile Sprint
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Swim
+                            <span class="ui-li-count">
+                                1/4 Mile
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div style="">
+                    <img style="width: 280px; height: 250px" src="http://assets.codiqa.com/ps/36884/ef51c0bf72add38eTeamCollab.jpg">
+                </div>
+                <div>
+                    <a href="#page13" data-transition="fade">
+                        My Health Status
+                    </a>
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- RestaurantsMap -->
+        <div data-role="page" id="page8">
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput4">
+                            Address/Location
+                        </label>
+                        <input name="" id="textinput4" placeholder="Vegan Restaurant" value=""
+                        type="text">
+                    </fieldset>
+                </div>
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Las Vegas, NV&amp;zoom=14&amp;size=288x350&amp;markers=Las Vegas, NV|Venetian Casino&amp;sensor=false"
+                width="288" height="350">
+                <div>
+                    <a href="#page11" data-transition="fade">
+                        Coupons/Rewards
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.youtube.com/watch?v=xLXUCXahg4o" target="_blank" data-transition="fade">
+                        Healthy Links
+                    </a>
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Rewards -->
+        <div data-role="page" id="page11">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Rewards
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Individual
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Mumsy
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Hubby
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Cindy
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Charlie
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Family
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Cumulative Points
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <p style="text-align: center; ">
+                        <b>
+                            Acme Supermarket
+                        </b>
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 75px; height: 75px" src="http://assets.codiqa.com/ps/36884/72f41d7c8299bea2imagesCAKF09PG.jpg">
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End -->
+        <div data-role="page" id="page13">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Mumsy's Health
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p style="text-align: left; " data-mce-style="text-align: left;">
+                        <span style="font-family: 'comic sans ms', sans-serif; font-size: large; "
+                        data-mce-style="font-family: 'comic sans ms', sans-serif; font-size: large;">
+                            <b>
+                                &nbsp; &nbsp; &nbsp; Family Health Status
+                            </b>
+                        </span>
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 150px; height: 150px" src="http://assets.codiqa.com/ps/36884/5ac8a584fa00c0d7smilyface.png">
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 300px; height: 200px" src="http://assets.codiqa.com/ps/36884/ac38b099684a6ab2familyhealth.png">
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Health R&amp;D Copy -->
+        <div data-role="page" id="page14">
+            <div data-role="content">
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Calendar Map -->
+        <div data-role="page" id="page12" style="background: url('http://assets.codiqa.com/ps/36884/60b6e576aa746d442012.10.15-15.55.55.jpg') no-repeat">
+            <div data-role="content">
+                <a data-role="button" data-inline="true" data-theme="b" href="#page8"
+                data-icon="search" data-iconpos="top">
+                    Map
+                </a>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page5" data-theme="" data-icon="home">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page4" data-theme="" data-icon="check">
+                            Track
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page10" data-theme="" data-icon="star">
+                            Collaborate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+
+</html>

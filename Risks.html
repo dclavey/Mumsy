@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+		<script type="text/javascript" src="datajs-1.0.2-bbfix.js"></script>
+		<script>
+		$(document).bind('pageinit',function(event) {getRisksData()});
+		</script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                   Risks Table
+                </h3>
+            </div>
+            <div id="ooga" data-role="content">
+                    <ul id="risks-element-id" data-role="listview" data-inset="true" data-theme="d" >
+					 
+					</ul>
+            </div>
+			<div data-theme="a" data-role="footer">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+            
+        </div>
+<script type="text/javascript">
+	// Root URI for the service. 
+	//var serviceUri = "http://192.168.12.3:8000/team01/risks.xsodata/Risks"; 
+	var nopoint = "ooga";
+	function getRisksData()
+	{ 
+	// URL for calling getRewardsData function with all parameters. 
+		var airline = "AA"; 
+		var myEndpointUri = "http://192.168.12.3:8000/team01/risks.xsodata/Risks"; 
+		// Send the request and define callback methods. 
+		OData.read( {requestUri:myEndpointUri,user:"team01",password:"InnoJam2012"}, function (data) { 
+			//Success Callback (Received data is a Feed): 
+			var html = ""; 
+			for (var i = 0; i < data.results.length; i++) {
+				html += "<li><h3> Risk: " + data.results[i].RISK + "</h3>";
+				html += "<div> Points: " + data.results[i].WARNINGFOOD + "</div>";				
+				html += "<div> Alert: " + data.results[i].ALERT + "</div>";				
+				
+				html += "</li>";
+			}
+			document.getElementById("risks-element-id").innerHTML = html; 
+			$('#risks-element-id').listview('refresh');
+			//Assuming your HTML page has DIV element with id ‘target-element-id’ 
+		}, 
+			function (err) { 
+			//Error Callback: 
+			var spacer = "nothing";
+			alert("Error occurred test - " + err.message); 
+			} 
+		);
+	}
+</script>
+    </body>
+</html>
